@@ -44,7 +44,7 @@ export default function Navbar() {
                 to="/"
                 disableRipple
                 sx={{
-                  color: "#f5f5f5",
+                  color: "#d4af37",
                   textTransform: "none",
                   "&:hover": { color: "#B343FF" },
                   "&:active": { color: "#B343FF" },
@@ -61,7 +61,7 @@ export default function Navbar() {
                 to="/personajes"
                 disableRipple
                 sx={{
-                  color: "#f5f5f5",
+                  color: "#d4af37",
                   textTransform: "none",
                   "&:hover": { color: "#B343FF" },
                   "&:active": { color: "#B343FF" },
@@ -78,7 +78,7 @@ export default function Navbar() {
                 to="/buscar" // en minúscula
                 disableRipple
                 sx={{
-                  color: "#f5f5f5",
+                  color: "#d4af37",
                   textTransform: "none",
                   "&:hover": { color: "#B343FF" },
                   "&:active": { color: "#B343FF" },

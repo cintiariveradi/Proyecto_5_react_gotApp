@@ -2,13 +2,13 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Import pages
+// Importar pages
 import Home from "./Pages/Home";
 import CharactersPage from "./Pages/CharactersPage";
 import CharacterDetail from "./Pages/CharacterDetail";
 import Buscar from "./Pages/Buscar";
 
-// Import components
+// Importar components
 import Navbar from "./Components/NavBar";
 import ErrorBoundary from "./Components/ErrorBoundary";
 

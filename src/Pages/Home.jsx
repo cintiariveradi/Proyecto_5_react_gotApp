@@ -8,7 +8,7 @@ export default function Home() {
       sx={{
         minHeight: "100vh",
         bgcolor: "#050509",
-        color: "#f5f5f5",
+        color: "#B343FF",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
