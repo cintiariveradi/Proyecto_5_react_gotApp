@@ -1,0 +1,1 @@
+// Custom MUI theme for GOT (colors, typography)
