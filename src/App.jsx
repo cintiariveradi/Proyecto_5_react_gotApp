@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import CharactersPage from "./Pages/CharactersPage";
 import CharacterDetail from "./Pages/CharacterDetail";
+import Buscar from "./Pages/Buscar";
 
 // Import components
 import Navbar from "./Components/NavBar";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/personajes" element={<CharactersPage />} />
           <Route path="/personajes/:id" element={<CharacterDetail />} />
+          <Route path="/buscar" element={<Buscar />} />
         </Routes>
       </ErrorBoundary>
     </BrowserRouter>
