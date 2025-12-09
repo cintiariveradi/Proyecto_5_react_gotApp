@@ -1,6 +1,3 @@
-// Character card component - GOT
-
-// src/Components/CharacterCard.jsx
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -40,7 +37,7 @@ export default function CharacterCard({ character }) {
         sx={{
           textAlign: "center",
           py: 1.5,
-        flexGrow: 1,
+          flexGrow: 1,
         }}
       >
         <Typography
@@ -48,8 +45,8 @@ export default function CharacterCard({ character }) {
           sx={{
             fontFamily: "Cinzel, serif",
             fontSize: "0.95rem",
-            minHeight: "2.4em", // mantiene altura pareja
             color: "#d4af37",
+            minHeight: "2.4em",
           }}
         >
           {character.fullName}

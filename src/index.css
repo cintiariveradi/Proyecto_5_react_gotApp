@@ -1,4 +1,3 @@
-/* Reset CSS básico */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -13,38 +12,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Los links no deben ser azules ni morados */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Asegura que el body ocupe toda la pantalla */
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100vh;
-
-
-  display: block;  
   background-color: #050509;
 }
 
-/* Asegura que React ocupe toda la pantalla */
 #root {
   width: 100%;
   min-height: 100vh;
 }
 
-
 button {
   cursor: pointer;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: #ffffff;
-    color: #213547;
-  }
 }

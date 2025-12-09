@@ -1,4 +1,5 @@
 // Home page - GOT
+
 import { Box, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -14,7 +15,7 @@ export default function Home() {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        padding: 4,
+        p: 4,
       }}
     >
       <Typography
@@ -23,6 +24,7 @@ export default function Home() {
           fontFamily: "Cinzel, serif",
           color: "#d4af37",
           mb: 2,
+          letterSpacing: "0.05em",
         }}
       >
         GOT Characters
@@ -36,34 +38,34 @@ export default function Home() {
           mb: 4,
         }}
       >
-        Explora los personajes de Game of thrones y descubre sus casas, títulos y más.
+        Explora los personajes de Game of Thrones y descubre sus casas, títulos y más.
       </Typography>
 
       <Button
-  component={Link}
-  to="/personajes"
-  variant="contained"
-  disableRipple
-  sx={{
-    bgcolor: "#d4af37",
-    color: "#000",
-    fontWeight: "bold",
-    "&:hover": {
-      bgcolor: "#B343FF", // morado hover
-      color: "#fff",
-    },
-    "&:active": {
-      bgcolor: "#B343FF", // al hacer click
-      color: "#fff",
-    },
-    "&:focus": {
-      bgcolor: "#B343FF", // cuando queda con foco
-      color: "#fff",
-    },
-    "&:focus-visible": { outline: "none" },
-    WebkitTapHighlightColor: "transparent",
-  }}
->
+        component={Link}
+        to="/personajes"
+        variant="contained"
+        disableRipple
+        sx={{
+          bgcolor: "#d4af37",
+          color: "#000",
+          fontWeight: "bold",
+          "&:hover": {
+            bgcolor: "#B343FF",
+            color: "#fff",
+          },
+          "&:active": {
+            bgcolor: "#B343FF",
+            color: "#fff",
+          },
+          "&:focus": {
+            bgcolor: "#B343FF",
+            color: "#fff",
+          },
+          "&:focus-visible": { outline: "none" },
+          WebkitTapHighlightColor: "transparent",
+        }}
+      >
         Ver personajes
       </Button>
     </Box>

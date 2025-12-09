@@ -1,12 +1,10 @@
-// CharacterDetail.jsx - Página de detalle de personaje GOT
-
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getCharacterById } from "../services/api";
 import { Box, Typography, Button } from "@mui/material";
 
 export default function CharacterDetail() {
-  const { id } = useParams(); // ← obtenemos el id desde la URL
+  const { id } = useParams();
   const [character, setCharacter] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -23,7 +21,6 @@ export default function CharacterDetail() {
         setLoading(false);
       }
     }
-
     fetchDetail();
   }, [id]);
 
@@ -48,19 +45,21 @@ export default function CharacterDetail() {
         textAlign: "center",
       }}
     >
-      {/* Imagen grande tipo póster */}
-      <img
+      {/* Imagen tipo póster */}
+      <Box
+        component="img"
         src={character.imageUrl}
         alt={character.fullName}
-        style={{
+        sx={{
           width: "300px",
           height: "400px",
           objectFit: "cover",
-          marginBottom: "20px",
+          mb: 3,
+          borderRadius: "4px",
+          border: "1px solid #2e2e3a",
         }}
       />
 
-      {/* Nombre */}
       <Typography
         variant="h4"
         sx={{
@@ -73,11 +72,10 @@ export default function CharacterDetail() {
         {character.fullName}
       </Typography>
 
-      {/* Título */}
       <Typography
         variant="h6"
         sx={{
-          opacity: 0.8,
+          opacity: 0.85,
           fontFamily: "Cinzel, serif",
           mb: 1,
         }}
@@ -85,23 +83,21 @@ export default function CharacterDetail() {
         {character.title || "Sin título"}
       </Typography>
 
-      {/* Casa */}
-      <Typography sx={{ opacity: 0.7, mb: 4 }}>
+      <Typography sx={{ opacity: 0.75, mb: 4 }}>
         Casa: <strong>{character.family || "Desconocida"}</strong>
       </Typography>
 
-      {/* Botón volver */}
       <Button
         component={Link}
         to="/personajes"
         variant="outlined"
         sx={{
           bgcolor: "#d4af37",
-      color: "#000",
-    fontWeight: "bold",
-    "&:hover": {
-      bgcolor: "#B343FF", // morado hover
-      color: "#fff",
+          color: "#000",
+          fontWeight: "bold",
+          "&:hover": {
+            bgcolor: "#B343FF",
+            color: "#fff",
           },
         }}
       >

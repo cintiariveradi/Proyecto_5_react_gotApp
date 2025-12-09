@@ -1,5 +1,3 @@
-// App main file - GOT project
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Importar pages
@@ -15,9 +13,10 @@ import ErrorBoundary from "./Components/ErrorBoundary";
 function App() {
   return (
     <BrowserRouter>
-      <ErrorBoundary>
-        <Navbar />
+      <Navbar />
 
+      {/* ErrorBoundary envuelve solo las rutas */}
+      <ErrorBoundary>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/personajes" element={<CharactersPage />} />
@@ -25,6 +24,7 @@ function App() {
           <Route path="/buscar" element={<Buscar />} />
         </Routes>
       </ErrorBoundary>
+
     </BrowserRouter>
   );
 }
