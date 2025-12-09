@@ -107,8 +107,8 @@ Esta funcionalidad cumple con el requisito del módulo para manejar errores en R
 ## Despliegue
 El proyecto será desplegado utilizando un servicio externo como Netlify, Vercel o GitHub Pages.
 La URL final será incorporada una vez realizado el despliegue.
-Deploy: próximamente (URL aquí)
+Deploy: https://got-characters-react.netlify.app 
 
 ## Licencia y Autoría
-Proyecto desarrollado por Cintia Rivera
+Proyecto desarrollado por Cintia Rivera.
 Módulo de React — Bootcamp DWFS.

@@ -9,10 +9,10 @@ export const theme = createTheme({
       paper: "#0b0b10",
     },
     primary: {
-      main: "#d4af37", // dorado GOT
+      main: "#d4af37",
     },
     secondary: {
-      main: "#B343FF", // morado que te gusta
+      main: "#B343FF",
     },
     text: {
       primary: "#f5f5f5",
